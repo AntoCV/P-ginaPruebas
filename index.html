@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es"> <!--INDICAMOS EL IDIOMA CON EL QUE VAMOS A TRABAJAR-->
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrption" content="Está es mi primera página web">
+    <link rel="stylesheet" href="estilos.css">
+    <!--ORDENA TU HEAD MEJORA TU PERFORMANCE 
+        1.- <title>
+        2.- <base>
+        3.-link
+        4.- <style
+        5.- <meta>
+        6.- <script>
+        7.- <noscript>
+        8.- <template>-->
+</head>
+<body>
+    <div class="agrupar">
+            <header class="cabecera">
+                <h1> MI BLOG</h1>
+            </header>
+
+            <nav class="menu">
+                <ul> <!--ul SON LISTAS DESORDENADAS, ol LISTA ORDENADAS PARA CREAR MUCHAS li SERIA ASI li*4>a, TAMBIÉN SE PUEDE AGREGAR UNA LISTA DENTRO DE OTRA LISTA-->
+                    <li><a href="">Principal</a></li>
+                    <li><a href="">Ayuda</a></li>
+                    <li><a href="#12">Contacto</a></li> <!--SE PUEDE DAR UN ID A AUN LUGRA DE LA MISMA PAGINA PARA HACER UN LINK A ESE LUGAR-->
+                    <li><a href="">Nosotros</a></li>
+                    <li><a target="_blank" href="https://www.google.com">Google</a></li>
+                    <!--EL ATRIBUTO target ES PARA QUE LE LINK LO ABRA EN OTRA PAGINA-->
+                    <!--SI QUIERO INGRESAR A UN CARPETA ES UN PUNTO . Y SI QUIERO SALIR DE UNA CARPETA SON DOS PUNTOS ..-->
+                </ul>
+            </nav>
+
+            <section class="seccion">
+                <article>
+                    <hgroup>
+                        <h1>Notas de CSS</h1>
+                        <h2>Ejemplos de selectores</h2>
+                    </hgroup>
+                    
+                    <time datetime="29-09-2021">Publicado el 29-09-2021</time>
+                    
+                    <p id="Parrafo">Notas para recordar cuando se usa el id en el HTML en CSS se hace mención con #, cuando se usa una clase en HTML en CSS se hace mención con punto .seguido de la clase, el asterisco * es para afectar a toda la página, para afectar unicamenete a los atributos, se coloca el atributo entre corchetes ejemplo blockquote [cite] </p>
+                    
+                    <!--LA ETIQUETA hr SIRVE PARA COLOCAR UNA LÍNEA HORIZONTAL-->
+                    <hr>
+
+                    <!--LA ETIQUETA abbr TE AGREGA UN RECUADRO AL COLOCAR EL PUNTERO SOBRE LA PALABRA-->
+                    <abbr title="Nombre de mascota">Manchas</abbr> <br>
+                    <br>
+                    <!--PARA CREAR UNA TABLA-->
+                    <table border="1px" width="100%">
+                        <caption><b>HORARIOS DE GIMNASIO</b></caption> <!--caption ES EL NOMBRE DE LA TABLA-->
+                            <thead> <!--thead ES EL ENCABEZADO DE LA TABLA-->
+                                <tr> <!--tr ES UNA FILA (HORIZONTAL)-->
+                                    <th>HORARIOS</th>
+                                    <th>LUNES</th> <!--th SE INDICA QUE ESTA DENTRO DEL THEAD LO COLOCA EN NEGRITAS-->
+                                    <th>MARTES</th>
+                                    <th>MIERCOLES</th>
+                                    <th>JUEVES</th>
+                                    <th>VIERNES</th>
+                                    <th>SABADO</th>
+                                    <th>DOMINGO</th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody> <!--tbody ES EL CUERPO DE LA TABLA-->
+                                <tr>
+                                    <th>7:00am</th>
+                                    <td>LIBRE</td> <!--td SE INDICA DENTRO DEL tbody SIN NEGRITAS-->
+                                    <td>LIBRE</td>
+                                    <td>LIBRE</td>
+                                    <td>LIBRE</td>
+                                    <td>LIBRE</td>
+                                    <td>LIBRE</td>
+                                    <td>CERRADO</td>
+                                </tr>
+
+                                <tr>
+                                    <th>8:00am</th>
+                                    <td>YOGA</td> <!--td SE INDICA DENTRO DEL tbody SIN NEGRITAS-->
+                                    <td>SPINING</td>
+                                    <td>STEP</td>
+                                    <td>BAILE</td>
+                                    <td>LIBRE</td>
+                                    <td>CORRER</td>
+                                    <td>CERRADO</td>
+                                </tr>
+
+                                <tr>
+                                    <th>12:00pm</th>
+                                    <td colspan="7">ALMUERZO GRUPAL</td> 
+                        <!--colspan ES PARA COMBINAR Y CENTRAR LAS CELDAS DE FORMA HORINZONTAL SE TIENE QUE AGREGAR LA CANTIDAD DE COLUMNAS-->
+                        <!--rowspan ES PARA COMBINAR Y CENTRAR LAS CELDAS DE FORMA VERTICAL SE TIENE QUE AGREGAR LA CANTIDAD, CUANDI SE AGREGA SE VAN A MOVER LAS COLUMNAS SOLO ES CUESTION DE QUITAR LO QUE SOBRA-->
+                                </tr>
+                            </tbody>
+
+                            <tfoot> <!--POR LO REGULAR SE OCUPA EN SUMAS TOTALES-->
+                                <tr>
+                                    <th>10:00am</th>
+                                    <td>YOGA</td> <!--td SE INDICA DENTRO DEL tbody SIN NEGRITAS-->
+                                    <td>SPINING</td>
+                                    <td>STEP</td>
+                                    <td>BAILE</td>
+                                    <td>LIBRE</td>
+                                    <td>CORRER</td>
+                                    <td>CERRADO</td>
+                                </tr>
+                            </tfoot>
+
+                    </table>
+
+                    <!--PARA CREAR FORMULARIOS-->
+                    <br> <h1>FORMULARIOS</h1>
+                    <form action="">
+                        <label for="nombre">Nombre:</label> <input type="text" value="" placeholder="Nombre" name="nombre" id="nombre" maxlength="10" minlength="3" required> <br>
+
+                        <label for="email">Email:</label> <input type="email" placeholder="Correo electrónico" id="email" required> <br>
+
+                        <label for="password">Password</label> <input type="password" placeholder="Contraseña" id="password" maxlength="10" minlength="2" required> <br>
+
+                        <input type="button" value="Pulsar"> <br>
+                        <button>Pulsame</button> <br>
+
+                        <label for="condiciones">¿Aceptas las condiciones?</label> <input type="checkbox" id="condiciones"> <br>
+
+                        <input type="color"> <br>
+
+                        <input type="date"> <br>
+
+                        <input type="time" name="hora" id="hora"> <br>
+
+                        <input type="file" name="" id=""> <br>
+
+                        <input type="hidden" name=""> <br>
+
+                        <label for="estado">Estado Civil: </label> <input type="radio" name="estado" id="estado" value="casado"> Casado <input type="radio" name="estado" id="estado" value="soltero"> Soltero <br>
+
+                        <label for="peces">Peces</label>
+                        <select name="peces" id="">
+                            <optgroup label="Mediterraneo">
+                                <option value="sargo">Sargo</option>
+                                <option value="dorado">Dorada</option>
+                                <option value="denton">denton</option>
+                            </optgroup>
+                            <optgroup label="Atlantico">
+                                <option value="salmon">Salmon</option>
+                                <option value="merluza">Merluza</option>
+                                <option value="rape">Rape</option>
+                            </optgroup>
+                        </select>
+                        
+                        <input type="submit" value="Enviar"> <br> <br>
+
+                    </form>
+
+                    <!--ETIQUETA Iframe SIRVE PARA CONTENIDO EMBEDIDO METER PAGINAS DENTRO DE NUESTRA PAGINA WEB-->
+                    
+                    <h1>ETIQUETA IFRAME</h1> <br>
+                    <iframe src="https://insadisa.com/" frameborder="0" title="Página de INSADISA" width="100%" height="300px" ></iframe> <br> <br>
+
+                    <iframe width="100%" height="400px" src="https://www.youtube.com/embed/cwvpqNggpS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br><br>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14888.529918686581!2d-101.65023475!3d21.107283849999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1634662838983!5m2!1ses-419!2smx" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe> <br> <br>
+
+                    <h1>VIDEO Y AUDIO</h1> <br>
+                    
+                    <!--TODOS ESTAS OPCIÓN SE PUEDEN QUITAR EN EL MOMENTO QUE QUERAMOS: controls AGREGA LOS CONTROLS AL VIDEO, muted EL VIDEO SIEMPRE INICIA MUTEADO, poster AGREGAR UNA IMAGEN AL INICIO DEL VIDEO SOLO AGREMOS LA DIRECCIÓN, loop AL MOMENTO DE TERMINAR EL VIDEO COMIENZA DE NUEVO, autoplay AL ENTRAR A LA PAGINA SE INICIA SOLO EL VIDEO-->
+                    <video src="" width="100%" controls muted poster="" loop autoplay >NO TENGO VIDEO DE MOMENTO</video> <br><br>
+
+                    <audio src="./music/Caloncho - Optimista(MP3_128K).mp3" controls loop autoplay></audio>
+
+
+
+
+                    <br><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cumque tempore, consequatur ratione alias quas voluptates perferendis temporibus quaerat facere accusamus quibusdam dolore molestias rerum laborum omnis odit eos veritatis? <small>la etiqueta small es para hacer un texto más pequeño</small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, hic. </p>
+                    <img src="ICONOS/investigacion.png" alt="">
+                    <footer>
+                        <p>Comentarios (0)</p>
+                    </footer>
+                    <address>
+                        <a href="https://google.com">Enlace para Google</a>
+                    </address>
+                </article>
+                <article>
+                    <hgroup>
+                        <h1>Título del Segundo articulo</h1>
+                        <h2>Ejemplos de selectores</h2>
+                        
+                        <!--LA FORMA DE AGREGAR IMAGENES JPG, SVG, PNG-->
+                        <img src="./ICONOS/semantica.png" alt="semantica html" width="70%">
+                    </hgroup>
+                    <time datetime="29-09-2021">Publicado el 29-09-2021</time>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cumque tempore, consequatur ratione alias quas voluptates perferendis temporibus quaerat facere accusamus quibusdam dolore molestias rerum laborum omnis odit eos veritatis?</p>
+                    <p>Comentarios (10)</p>
+                </article>
+            </section>
+
+            <aside class="columna">
+                    <blockquote cite="https://google.com">
+                        Mensaje 1
+                    </blockquote>
+                    <p>Como utilizar correctamente las etiquetas de encabezado en HTML5 <a href="Encabezados.html">ir</a></p>
+                Archivo
+
+                Acerca de
+            </aside>
+
+            <footer class="pie">
+                Derechos reservados atom 2021
+                
+                Cosas de pie de la pagina 
+
+            </footer>
+
+
+                    <p id="12">Datos de contacto Tel: 01 01 01 01 01 01</p>
+
+                    <p>P: Sirve para escribir párrafos</p>
+
+                    <p>h1: Srive para colocar encabezados</p>
+                    
+                    <p>Atributo de las etiquetas: Permiten dar propie</p>
+                    Versión del html
+
+                    <p>1.- Encabezados</p>
+                    <p>2.- Etiquetas de texto</p>
+                    <p>3.- </p>
+    </div>
+
+<!--AQUI ES EL MEJOR LUGAR PARA ENLAZAR LOS ARCHIVOS JAVASCRIP-->
+<script src="./Clases&Id.js"></script>
+</body>
+</html>
+
+
+
+
+
+

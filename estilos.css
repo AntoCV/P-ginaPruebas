@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+h2{
+    font: bold 20px sans-serif;
+}
+
+header, section, footer, aside, nav, article, hgroup {
+    display: block;
+    }
+
+/*PARA AGREGAR UN COMENTARIO EN CSS ES DE ESTA FORMA*/
+/*table {
+    border: 1px solid black;
+    width: 100%;
+}*/
+
+
+#Parrafo {
+    font-family: sans-serif;
+    color: black;
+}
+
+body{
+    text-align: center;
+}
+
+.agrupar {
+    background-color: cadetblue;
+    width: auto;
+    margin: 14px auto;
+    
+}
+
+.cabecera {
+    background-color: #00cec9;
+    border: 1px solid #00b894;
+    padding: 10px;
+}
+
+.cabecera h1 {
+    text-align: left;
+}
+
+.menu {
+    background-color: #81ecec;
+    padding: 5px 15px;
+}
+.menu li {
+    list-style: none;
+    padding: 5px;
+    font: bold 14px verdana;
+    display: inline-block;
+    text-align: right;
+}
+
+.seccion {
+    margin: 20px;
+    width: 1000px;
+    border: 1px solid black;
+    padding: 15px;
+    float: left;
+}
+
+.columna {
+    width: 370px;
+    margin: 20px 10px;
+    border: 1px solid black;
+    padding: 15px;
+    float: right;
+}
+
+.pie {
+    clear: both;
+}
+
+article {
+    background-color: #fffbcc;
+    border: 1px solid #999;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
